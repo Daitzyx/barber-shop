@@ -59,20 +59,17 @@ Additionally, the project includes shared packages for TypeScript, ESLint config
    git clone https://github.com/your-username/barba-brutal.git
    cd barba-brutal
 
-### Install dependencies
-````
-cd apps/frontend && npm install
-cd ../backend && npm install
-cd ../mobile && npm install
-cd ../../
-````
+2. **Install dependencies:**
+   ```bash
+   cd apps/frontend && npm install
+   cd ../backend && npm install
+   cd ../mobile && npm install
+   cd ../../
 
-### Build the Project
-````
-yarn build
-````
+3. **Build the Project:**
+   ```bash
+   yarn build
 
-### Start Development server
-````
-yarn run dev
-````
+4. **Start Development server:**
+   ```bash
+   yarn run dev
