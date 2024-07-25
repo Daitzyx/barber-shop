@@ -1,0 +1,3 @@
+# GET http://localhost:3001/servico
+
+GET http://localhost:3001/agendamentos/nathanrtd01@gmail.com
