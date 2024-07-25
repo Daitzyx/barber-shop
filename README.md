@@ -1,82 +1,78 @@
-# Turborepo starter
 
-This is an official starter Turborepo.
+# Barba Brutal - Complete System for Barbershop
 
-## Using this example
+Welcome to the **Barba Brutal** repository, a comprehensive system developed to manage and optimize the operations of a modern barbershop. This project consists of three main components:
 
-Run the following command:
+- **Frontend:** Developed with Next.js, providing a fast, interactive, and responsive user interface.
+- **Backend:** Built with NestJS, ensuring a robust, scalable, and secure API.
+- **Mobile:** Mobile application developed with Expo and React Native, allowing users to access barbershop services directly from their mobile devices.
 
-```sh
-npx create-turbo@latest
-```
+Additionally, the project includes shared packages for TypeScript, ESLint configuration, and core functionalities used by both frontend and backend.
 
-## What's inside?
+## Technologies Used
 
-This Turborepo includes the following packages/apps:
+### Frontend:
+- [Next.js](https://nextjs.org/): React framework for server-side rendering and static site generation.
+- [React](https://reactjs.org/): JavaScript library for building user interfaces.
+- [Tailwind CSS](https://tailwindcss.com/): Utility-first CSS framework for rapid and efficient styling.
 
-### Apps and Packages
+### Backend:
+- [NestJS](https://nestjs.com/): Progressive Node.js framework for building efficient, reliable, and scalable server-side applications.
+- [Prisma](https://www.prisma.io/): Modern and high-performance ORM (Object-Relational Mapping).
+- [PostgreSQL](https://www.postgresql.org/): Advanced open-source relational database management system.
 
-- `docs`: a [Next.js](https://nextjs.org/) app
-- `web`: another [Next.js](https://nextjs.org/) app
-- `@repo/ui`: a stub React component library shared by both `web` and `docs` applications
-- `@repo/eslint-config`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
-- `@repo/typescript-config`: `tsconfig.json`s used throughout the monorepo
+### Mobile:
+- [Expo](https://expo.dev/): Platform for rapid mobile application development using JavaScript and React.
+- [React Native](https://reactnative.dev/): Framework for cross-platform mobile app development.
 
-Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
+## Features
 
-### Utilities
+- **Service Scheduling:** Allows clients to easily schedule appointments, viewing barbers' availability.
+- **Client Management:** Records and manages client information, facilitating personalized service.
+- **Inventory Control:** Monitors products and materials used in the barbershop.
+- **Notifications:** Sends notifications to remind clients of their appointments.
+- **Reports and Statistics:** Generates detailed reports on barbershop operations, aiding in decision-making.
 
-This Turborepo has some additional tools already setup for you:
+## Project Structure
 
-- [TypeScript](https://www.typescriptlang.org/) for static type checking
-- [ESLint](https://eslint.org/) for code linting
-- [Prettier](https://prettier.io) for code formatting
+- **Frontend:** Source code located in the `apps/frontend` folder.
+- **Backend:** Source code located in the `apps/backend` folder.
+- **Mobile:** Source code located in the `apps/mobile` folder.
+- **Shared Packages:**
+  - **Core:** Located in the `packages/core` folder, containing shared functionalities used by both frontend and backend.
+  - **ESLint Config:** Located in the `packages/eslint-config` folder, containing shared ESLint configurations.
+  - **TypeScript Config:** Located in the `packages/typescript-config` folder, containing shared TypeScript configurations.
 
-### Build
 
-To build all apps and packages, run the following command:
+## How to Run the Project
 
-```
-cd my-turborepo
-pnpm build
-```
+### Prerequisites
 
-### Develop
+- Node.js (v18 or higher)
+- Yarn (package manager)
+- PostgreSQL (for database)
 
-To develop all apps and packages, run the following command:
+### Setup Steps
 
-```
-cd my-turborepo
-pnpm dev
-```
+1. **Clone the Repository:**
+   ```bash
+   git clone https://github.com/your-username/barba-brutal.git
+   cd barba-brutal
 
-### Remote Caching
+### Install dependencies
+````
+cd apps/frontend && npm install
+cd ../backend && npm install
+cd ../mobile && npm install
+cd ../../
+````
 
-Turborepo can use a technique known as [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching) to share cache artifacts across machines, enabling you to share build caches with your team and CI/CD pipelines.
+### Build the Project
+````
+yarn build
+````
 
-By default, Turborepo will cache locally. To enable Remote Caching you will need an account with Vercel. If you don't have an account you can [create one](https://vercel.com/signup), then enter the following commands:
-
-```
-cd my-turborepo
-npx turbo login
-```
-
-This will authenticate the Turborepo CLI with your [Vercel account](https://vercel.com/docs/concepts/personal-accounts/overview).
-
-Next, you can link your Turborepo to your Remote Cache by running the following command from the root of your Turborepo:
-
-```
-npx turbo link
-```
-
-## Useful Links
-
-Learn more about the power of Turborepo:
-
-- [Tasks](https://turbo.build/repo/docs/core-concepts/monorepos/running-tasks)
-- [Caching](https://turbo.build/repo/docs/core-concepts/caching)
-- [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching)
-- [Filtering](https://turbo.build/repo/docs/core-concepts/monorepos/filtering)
-- [Configuration Options](https://turbo.build/repo/docs/reference/configuration)
-- [CLI Usage](https://turbo.build/repo/docs/reference/command-line-reference) -->
-
+### Start Development server
+````
+yarn run dev
+````
